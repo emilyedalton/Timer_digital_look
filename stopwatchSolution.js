@@ -10,12 +10,17 @@ window.onload = function() {
 };
 
 window.addEventListener('keyup', (event) => {
+  if (event.keyCode === 32) stopwatch.start();
+  if (event.keyCode === 13) stopwatch.stop();
+  if (event.keyCode === 82) stopwatch.reset();
   if (event.keyCode === 38) stopwatch.lap++;
   if (event.keyCode === 40) stopwatch.lap--;
   $("#laps").html("<h1>" + stopwatch.lap +  "</h1>");
-console.log(stopwatch.lap)
+  console.log(stopwatch.lap)
+
 
 });
+
 $('html, body').css({
   overflow: 'hidden',
   height: '100%'
@@ -30,7 +35,7 @@ var clockRunning = false;
 var stopwatch = {
 
   time: 0,
-  lap: 1,
+  lap: 0,
 
   reset: function() {
 
@@ -105,12 +110,8 @@ var stopwatch = {
     return minutes + ":" + seconds;
   }
 };
-function countkey(){
-window.addEventListener('keyup', (event) => {
-  if (event.keyCode === 32) stopwatch.lap++;
-  if (event.keyCode === 38) stopwatch.lap--;
-});
-}
+
+
 
 
 // Solution if you choose not to put it in an object
