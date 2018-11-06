@@ -6,8 +6,9 @@ body { /* Visual */
 h1{ font-size: 10em; }
 #display {
   font-family: monospace;
-  font-size: 120px;
+  font-size: 300px;
   color: green;
+  width: 100%;
 
   /* Typography */
   text-align: center;
@@ -18,7 +19,10 @@ h1{ font-size: 10em; }
 
 #wrapper {
   /* Box-model */
-  width: 500px;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 
   /* Positioning */
   margin: 50px auto 0;
@@ -36,14 +40,15 @@ button {
 }
 
 #laps {
-  width: 100%;
+  width: 50%;
   height: 400px;
+
 
   /* Positioning */
   margin-top: 20px;
 
   /* Box-model */
-  overflow: auto;
+  /* overflow: auto; */
 
   /* Typography */
   text-align: center;

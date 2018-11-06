@@ -33,7 +33,7 @@ var stopwatch = {
   reset: function() {
 
     stopwatch.time = 0;
-    stopwatch.lap = 1;
+    stopwatch.lap = 0;
 
     // DONE: Change the "display" div to "00:00."
     $("#display").text("00:00");
