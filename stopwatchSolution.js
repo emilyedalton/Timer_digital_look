@@ -67,7 +67,7 @@ var stopwatch = {
     $("#laps").html("<h1>" + stopwatch.lap +  "</h1>");
 
     // DONE: Increment lap by 1. Remember, we can't use "this" here.
-     //stopwatch.lap++;
+     stopwatch.lap++;
   
     
 },
