@@ -13,11 +13,13 @@ window.addEventListener('keyup', (event) => {
   if (event.keyCode === 38) stopwatch.lap++;
   if (event.keyCode === 40) stopwatch.lap--;
   $("#laps").html("<h1>" + stopwatch.lap +  "</h1>");
-
 console.log(stopwatch.lap)
 
 });
-
+$('html, body').css({
+  overflow: 'hidden',
+  height: '100%'
+});
 //  Variable that will hold our setInterval that runs the stopwatch
 var intervalId;
 
