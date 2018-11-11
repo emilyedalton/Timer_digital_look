@@ -5,6 +5,7 @@
 <html lang="en-us">
 
   <head>
+      <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
     <meta charset="UTF-8">
     <title>Stopwatch</title>
@@ -30,7 +31,33 @@
 
       <div id="laps"></div>
 
-    </div>
+<div id ="formDiv"> 
+  <form>
+      <table>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th> 
+    <th>Age</th>
+    <th>Event</th>
+    <th>Lift</th>
+    <th>Bell Weight</th>
+  </tr>
+  <tr>
+    <td><input type ='text' name ='firstname' id="firstName-input"></td>
+    <td><input type ='text' name ='lastname' id="lastName-input"></td>
+    <td><input type ='text' name ='age' id="age-input"></td>
+    <td><input type ='text' name ='event' id="event-input"></td>
+    <td><input type ='text' name ='lift' id="lift-input"></td>
+    <td><input type ='text' name ='Bell' id="bellWeight-input"></td>
+    <td><input type="submit" value="Submit"id="submit"></td>
+
+
+  </tr>
+</form>
+</table>
+
+<!-- </div>
+</div> -->
 
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

@@ -2,6 +2,9 @@
 
 body { /* Visual */
   background: black;
+  color: white;
+}
+form {color: white;
 }
 h1{ font-size: 10em; }
 #display {

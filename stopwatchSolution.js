@@ -1,5 +1,53 @@
 // STOPWATCH ACTIVITY (SOLUTION)
 // =============================
+var config = {
+  apiKey: "AIzaSyD7YMGteIHGSfHQsZ0NYD74Ygh6PAYHma0",
+  authDomain: "wckc-test.firebaseapp.com",
+  databaseURL: "https://wckc-test.firebaseio.com",
+  projectId: "wckc-test",
+  storageBucket: "wckc-test.appspot.com",
+  messagingSenderId: "412806298427"
+};
+firebase.initializeApp(config);
+//start of database 
+var dataRef = firebase.database();
+
+    // Initial Values
+    var firstName = "";
+    var lastName = "";
+    var age = 0;
+    // var meetName = "";
+    var lift = "";
+    var bellWeight = "";
+
+    // Capture Button Click
+    $("#submit").on("click", function(event) {
+      event.preventDefault();
+
+      // YOUR TASK!!!
+      // Code in the logic for storing and retrieving the most recent user.
+      // Don't forget to provide initial data to your Firebase database.
+      firstName = $("#firstName-input").val().trim();
+      lastName = $("#lastName-input").val().trim();
+      age = $("#age-input").val().trim();
+      // meetName = $("event-input").val().trim();
+      lift = $("#lift-input").val().trim();
+      bellWeight = $("#bellWeight-input").val().trim();
+      console.log("this is the firstName"+firstName);
+
+
+      // Code for the push
+      dataRef.ref().push({
+
+        firstName: firstName,
+        lastName: lastName,
+        age: age,
+        // meetName: meetName,
+        lift: lift,
+        bellWeight: bellWeight
+      });
+    });
+
 
 // This code will run as soon as the page loads
 window.onload = function() {
@@ -8,7 +56,7 @@ window.onload = function() {
   $("#reset").on("click", stopwatch.reset);
   $("#start").on("click", stopwatch.start);
 };
-
+///on key events
 window.addEventListener('keyup', (event) => {
   if (event.keyCode === 32) stopwatch.start();
   if (event.keyCode === 13) stopwatch.stop();
