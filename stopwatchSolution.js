@@ -1,24 +1,24 @@
 // STOPWATCH ACTIVITY (SOLUTION)
 // =============================
-var config = {
-  apiKey: "AIzaSyD7YMGteIHGSfHQsZ0NYD74Ygh6PAYHma0",
-  authDomain: "wckc-test.firebaseapp.com",
-  databaseURL: "https://wckc-test.firebaseio.com",
-  projectId: "wckc-test",
-  storageBucket: "wckc-test.appspot.com",
-  messagingSenderId: "412806298427"
-};
-firebase.initializeApp(config);
-//start of database 
-var dataRef = firebase.database();
+// var config = {
+//   apiKey: "AIzaSyD7YMGteIHGSfHQsZ0NYD74Ygh6PAYHma0",
+//   authDomain: "wckc-test.firebaseapp.com",
+//   databaseURL: "https://wckc-test.firebaseio.com",
+//   projectId: "wckc-test",
+//   storageBucket: "wckc-test.appspot.com",
+//   messagingSenderId: "412806298427"
+// };
+// firebase.initializeApp(config);
+// //start of database 
+// var dataRef = firebase.database();
 
-    // Initial Values
-    var firstName = "";
-    var lastName = "";
-    var age = 0;
-    // var meetName = "";
-    var lift = "";
-    var bellWeight = "";
+//     // Initial Values
+//     var firstName = "";
+//     var lastName = "";
+//     var age = 0;
+//     // var meetName = "";
+//     var lift = "";
+//     var bellWeight = "";
 
     // Capture Button Click
     $("#submit").on("click", function(event) {
