@@ -45,7 +45,17 @@ button {
 #laps {
   width: 50%;
   height: 400px;
-color: black;
+color: white;
+border: solid 2px yellow;
+}
+#lapContainer{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  border: 2px solid red;
+  justify-content: center;
+}
 
   /* Positioning */
   margin-top: 20px;
