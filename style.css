@@ -59,8 +59,19 @@ text-align: center;
 #logoContainer{
   width:100%;
   display:flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  margin: 4em;
+
+ 
+}
+#imageContainer{
+  padding: 2em;
+}
+#directions{ 
+  margin-right: auto;
+  font-size: 2em;
+  padding: 2em;
+
+
 }
   /* Positioning */
   margin-top: 20px;
